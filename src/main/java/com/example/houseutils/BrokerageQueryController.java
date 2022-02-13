@@ -15,6 +15,9 @@ import java.util.List;
 import static com.example.houseutils.policy.OtherActionTypeFactory.getOtherActionTypesFrom;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
+/**
+ * 중개 수수료가 얼마인지 조회하는 컨트롤러
+ */
 @RestController
 public class BrokerageQueryController {
 
@@ -42,7 +45,4 @@ public class BrokerageQueryController {
         }
         return  ResponseEntity.ok(entityModel);
     }
-
-
-
 }
